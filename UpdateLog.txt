@@ -1,0 +1,136 @@
+========Space Invaders 7.4.4 Update Log========
+
+7.0.0 ALPHA
+    Started programming of Game - Space Dodge 7.1.1
+
+7.0.1 ALPHA
+    Added Shuttle
+
+7.0.2 ALPHA
+    Added Meteors
+
+7.0.3 ALPHA
+    Added background
+
+7.0.4 ALPHA
+    Added music
+
+7.0.5 ALPHA
+    Added death sound
+
+7.0.6 ALPHA
+    Added start menu
+
+7.0.7 BETA
+    Tested game
+
+7.0.8 BETA
+    Fixed "meteor crash not detected" glitch
+
+7.0.9 BETA
+    Fixed "pressing of key not detected" glitch
+
+7.1.0 STABLE
+    Game is ready to be played
+
+7.1.1 STABLE
+    Added score system
+
+7.1.2 ALPHA
+    Major update - destroyed original game code and replaced with the start of Space Invaders 7.4.4
+
+7.1.3 ALPHA
+    Finished art for alien images
+
+7.1.4 ALPHA
+    Finished art for shooter
+
+7.1.5 ALPHA
+    Finished art for bullets
+
+7.1.6 ALPHA
+    Added custom font
+
+7.1.7 ALPHA
+    Created "assets" folder
+
+7.1.8 ALPHA
+    Created game folder
+
+7.1.9 ALPHA
+    Moved "assets" folder into game folder
+
+7.2.0 ALPHA
+    Moved all images into "assets folder"
+
+7.2.1 ALPHA
+    Finished art for icon image
+
+7.2.2 ALPHA
+    Added music
+
+7.2.3 ALPHA
+    Added explosion sound for when player loses
+
+7.2.4 ALPHA
+    Added score system
+
+7.2.5 ALPHA
+    Changed score system to +100 points for every alien killed, +50 points for every enemy bullet dodged and +25 points for every bullet that hits a barrier
+
+7.2.6 ALPHA
+    Added a special barrier that is shown after the old barriers are destroyed -  this barrier is a safe zone where aliens can't shoot the player
+
+7.2.7 ALPHA
+    Trebled that number of special barriers per old barrier
+
+7.2.8 ALPHA
+    Added a black background
+
+7.2.9 ALPHA
+    Gave aliens ability to move every 0.6 seconds
+
+7.3.0 ALPHA
+    Gave program ability to run cross-platform by converting program into Python 3.3.2
+
+7.3.1 ALPHA
+    Used Python module PyGame to give program ability to open window
+
+7.3.2 ALPHA
+    Converted program to Python 3.6.1
+
+7.3.3 ALPHA
+    Gave aliens ability to shoot
+
+7.3.4 ALPHA
+    Gave shooter ability to shoot and move
+
+7.3.5 ALPHA
+    Added lives system - 3 lives per game
+
+7.3.6 ALPHA
+    Added "You lose!" screen after lives value is 0
+
+7.3.7 ALPHA
+    Added "You win!" screen of after aliens are all dead
+
+7.3.8 ALPHA
+    Shown lives and score at start of game
+
+7.3.9 BETA
+    Tested game
+
+7.4.0 BETA
+    Fixed "not winning after all enemies dead" glitch
+
+7.4.1 BETA
+    Made bullets shot from shooter same colour as shooter
+
+7.4.2 BETA
+    Made bullets shot from alien same colour as alien
+
+7.4.3 STABLE
+    Game ready to be played
+
+7.4.4 STABLE
+    Added game name "Space Invaders 7.4.4" and "SpaceInvaders-7.4.4" as directory name and "SpaceInvaders-7.4.4.py" as program file name
