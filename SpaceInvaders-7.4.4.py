@@ -4,13 +4,19 @@ import sys
 import random
 import time
 
+#Import all the needed modules
+
 class SpaceInvaders:
     def __init__(self):
         pygame.init()
+        #Initiate pygame
         self.score = 0
-        self.lives = 3           
+        self.lives = 3
+        #Declaring the lives and score variables
         pygame.font.init()
+        #Initiate pygames font controller
         self.font = pygame.font.Font("assets/space_invaders.ttf", 15)
+        #Set the font
         barrierDesign = [[],[0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,0,0],
                          [0,0,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0],
                          [0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0],
@@ -30,21 +36,32 @@ class SpaceInvaders:
                          [1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1],
                          [1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1],
                          [1,1,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1]]
-
+        #Assigning a list to shape the barrier when the game is played; 1 is green, 0 is alpha (transparent pixels)
         self.screen = pygame.display.set_mode((800, 600))
+        #Set window size to 800 x 600 and display the window
         pygame.display.set_caption("Space Invaders 7.4.4")
+        #Set the text on top of the window to a string; the window name/caption - and display it
         self.icon = pygame.image.load("icon.png")
+        #Set the window icon image
         pygame.display.set_icon(self.icon)
+        #Display the window icon image
         pygame.mixer.music.load('music.mp3')
+        #Load the music track
         pygame.mixer.music.play(-1)
+        #Play the music forever; the value -1 means to play the music forever, 2 would play it twice, 0 is invalid, etc
         self.deathsound = pygame.mixer.Sound("Explosion+3.wav")
+        #Load the sound for when you lose
         self.enemySprites = {
                 0:[pygame.image.load("assets/alien1.png").convert(), pygame.image.load("assets/alien2.png").convert()],
                 1:[pygame.image.load("assets/alien3.png").convert(), pygame.image.load("assets/alien4.png").convert()],
                 2:[pygame.image.load("assets/alien5.png").convert(), pygame.image.load("assets/alien6.png").convert()],
                 }
+        #Load the alien images and convert them to a  pygame displayable format
         self.player = pygame.image.load("assets/shooter.png").convert()
+        #Load the player/shooter image and convert it to the pygame displayable format
         self.animationOn = 0
+        #Set the starting game variable to 0; so that the game opens a window but doesn't yet start - it just loads the
+        #images and background
         self.direction = 1
         self.enemySpeed = 20
         self.lastEnemyMove = 0
@@ -56,6 +73,7 @@ class SpaceInvaders:
         self.barrierParticles = []
         startY = 50
         startX = 50
+        #The variable assignments
         for rows in range(6):
             out = []
             if rows < 2:
